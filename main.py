@@ -38,7 +38,7 @@ class NumberConverter(App):
             hexadecimal_value = hex(decimal_value).upper()[2:]
             self.decimal_input.text = str(decimal_value)
             self.hexadecimal_input.text = hexadecimal_value
-            self.result_label.text = f"Dezimal: {decimal_value}\nHexadezimal: {hexadecimal_value}"
+#            self.result_label.text = f"Dezimal: {decimal_value}\nHexadezimal: {hexadecimal_value}"
         except ValueError:
             self.result_label.text = "Fehler: Ungültige binäre Eingabe."
 
@@ -50,7 +50,7 @@ class NumberConverter(App):
             hexadecimal_value = hex(decimal_value).upper()[2:]
             self.binary_input.text = binary_value
             self.hexadecimal_input.text = hexadecimal_value
-            self.result_label.text = f"Binär: {binary_value}\nHexadezimal: {hexadecimal_value}"
+#            self.result_label.text = f"Binär: {binary_value}\nHexadezimal: {hexadecimal_value}"
         except ValueError:
             self.result_label.text = "Fehler: Ungültige dezimale Eingabe."
 
@@ -61,7 +61,7 @@ class NumberConverter(App):
             binary_value = bin(decimal_value)[2:]
             self.binary_input.text = binary_value
             self.decimal_input.text = str(decimal_value)
-            self.result_label.text = f"Binär: {binary_value}\nDezimal: {decimal_value}"
+#            self.result_label.text = f"Binär: {binary_value}\nDezimal: {decimal_value}"
         except ValueError:
             self.result_label.text = "Fehler: Ungültige hexadezimale Eingabe."
 
